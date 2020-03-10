@@ -8,11 +8,11 @@ namespace JobBoard.Models
     public string Title { get; set; }
     public string Description { get; set; }
     // public string Contact { get; set; }
-    public List<Contact> ContactInfo {get; set;}
+    public Contact ContactInfo {get; set;}
 
     private static List<JobOpening> _instances = new List<JobOpening> {};
 
-    public JobOpening(string title, string description, List<Contact> contactinfo)
+    public JobOpening(string title, string description, Contact contactinfo)
     {
       Title = title;
       Description = description;

@@ -12,15 +12,11 @@
   {
     <li>@item.Title</li>
     <p>@item.Description</p>
-  
-    }
-  
-  @foreach (Contact citem in Model)
-    {
-      <li>@citem.Name</li>
-      <li>@citem.Email</li>
-      <li>@citem.Phone</li>
-    }
+    <p>Contact Info:</p>
+    <p>@item.ContactInfo.Name</p>
+    <p>@item.ContactInfo.Email</p>
+    <p>@item.ContactInfo.Phone</p>
+  }
 </ul>
 
 <a href="/jobopenings/new">Add a new item.</a>
